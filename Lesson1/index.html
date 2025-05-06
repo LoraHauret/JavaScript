@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="first.js"></script>
+  </head>
+  <body>
+    <button id="btn1" onclick="task1()">task 1</button>
+    <button id="btn2" onclick="task2()">task 2</button>
+    <button id="btn3" onclick="task3()">task 3</button>
+    <button id="btn4" onclick="task4()">task 4</button>
+    <button id="btn5" onclick="task5()">task 5</button>
+    <button id="btn6" onclick="task6()">task 6</button>
+    <button id="btn7" onclick="task7()">task 7</button>
+    <button id="btn8" onclick="task8()">task 8</button>
+    <button id="btn9" onclick="task9()">task 9</button>
+    <button id="btn10" onclick="task10()">task 10</button>
+    <!--Запросіть у користувача число, зведіть це число в 2 ступінь та виведіть на екран.
+    <script>
+     /* 
+      let userNumber = prompt(
+        "Введите число для возведения во 2 степень\n(1-10)"
+      );
+      if (userNumber != null) {
+        userNumber = parseInt(userNumber);
+        if (!isNaN(userNumber) && userNumber > 0 && userNumber <= 10) {
+          alert(userNumber * userNumber);
+        } else {
+          alert("Введено неверное число");
+        }
+      } else {
+        alert("отмена ввода");
+      }*/
+    </script>-->
+    <!--
+Запросіть у користувача 2 числа та виведіть середнє арифметичне цих чисел.
+
+    <script>
+      /*
+      let userString = prompt("введите 2 числа через запятую или пробел");
+      if (userString != null) {
+        let arr = userString.split(/[\s,]/);
+        if (arr.length > 1) {
+          let num1 = parseInt(arr[0]);
+          let num2 = parseInt(arr[1]);
+          if (!isNaN(num1) && !isNaN(num2)) {
+            alert("среднее арифметическое чисел: " + (num1 + num2) / 2);
+          }
+        } else alert("введено не 2 числа");
+      }
+        */
+    </script>-->
+    <!--
+Запросіть у користувача довжину сторони квадрата та виведіть його площу.
+
+    <script>
+      /*
+      let userNumber = prompt(
+        "Введите сторону квадрата для вычисления площади"
+      );
+      if (userNumber != null) {
+        userNumber = Number(userNumber);
+        if (!isNaN(userNumber)) {
+          alert("площадь квадрата: " + userNumber * userNumber);
+        } else {
+          alert("Введено неверное число");
+        }
+      } else {
+        alert("отмена ввода");
+      }*/
+    </script>-->
+    <!--
+Реалізуйте конвертор із кілометрів у милі (користувач вводить кілометри, програма виводить милі) 1 км = 0,621371 миль. Вкажіть це значення у коді як константу.
+  
+
+    <script>
+      /*
+      let userNumber = prompt(
+        "Введите количество километров для конвертации в мили"
+      );
+      if (userNumber != null) {
+        userNumber = Number(userNumber);
+        if (!isNaN(userNumber)) {
+          const koef = 0.621371;
+          alert("в : " + userNumber + "км " + userNumber * koef + " миль.");
+        } else {
+          alert("Введено неверное число");
+        }
+      } else {
+        alert("отмена ввода");
+      }
+        */
+    </script>
+  -->
+    <!--Реалізуйте калькулятор. Користувач вводить два числа, а програма виводить результати дій +, –, *, / цих чисел.
+  
+    <script>
+      /*
+      let userString = prompt("введите 2 числа через запятую или пробел");
+      if (userString != null) {
+        let arr = userString.split(/[\s,]/);
+        if (arr.length > 1) {
+          let num1 = parseInt(arr[0]);
+          let num2 = parseInt(arr[1]);
+          if (!isNaN(num1) && !isNaN(num2)) {
+            let division = num2 !== 0 ? num1 / num2 : "деление на 0 невозможно";
+            alert(
+              num1.toString() +
+                " + " +
+                num2.toString() +
+                " = " +
+                (num1 + num2) +
+                "\n" +
+                num1.toString() +
+                " - " +
+                num2.toString() +
+                " = " +
+                (num1 - num2) +
+                "\n" +
+                num1.toString() +
+                " * " +
+                num2.toString() +
+                " = " +
+                num1 * num2 +
+                "\n" +
+                num1.toString() +
+                " / " +
+                num2.toString() +
+                " = " +
+                division
+            );
+          }
+        } else alert("введено не 2 числа");
+      }
+        */
+    </script>
+-->
+    <!--Користувач вводить значення a і b для формули a*x+b=0, а програма підраховує і виводить значення x.-->
+    <!--
+    <script>
+      /*
+      let userString = prompt(
+        "введите a і b через запятую или пробел \nдля вычисления формулы a*x+b=0"
+      ).trim();
+      if (userString != null) {
+        let arr = userString.split(/[\s,]/);
+        if (arr.length > 1) {
+          let a = Number(arr[0]);
+          let b = Number(arr[1]);
+          if (!isNaN(a) && !isNaN(b)) {
+            if (a != 0) {
+              alert("x = " + -b / a);
+            } else alert("a=0. деление на ноль.");
+          }
+        } else alert("введено не 2 числа");
+      }*/
+    </script>
+  -->
+    <!--
+Запросіть у користувача поточний час (години та хвилини) і виведіть, скільки годин та хвилин залишилося до наступного дня.
+  -->
+    <!--
+    <script>
+      /*
+      let userString = prompt(
+        "введите часы, минуты в 24 формате (разделители : / - )"
+      ).trim();
+      if (userString != null) {
+        let arr = userString.split(/[/:-]/);
+        if (arr.length === 2) {
+          let hours = parseInt(arr[0]);
+          let minutes = parseInt(arr[1]);
+          if (
+            !isNaN(hours) &&
+            !isNaN(minutes) &&
+            hours >= 0 &&
+            hours < 24 &&
+            minutes >= 0 &&
+            minutes < 60
+          ) {
+            const minutesPerDay = 24 * 60;
+            let rest = minutesPerDay - (hours * 60 + minutes);
+
+            alert(
+              "до следующего дня осталось:\n" +
+                Math.floor(rest / 60) +
+                " часов " +
+                (rest % 60) +
+                " минут"
+            );
+          }
+        } else alert("введено не 2 числа");
+      }
+        */
+    </script>
+    -->
+    <!--  Запросіть у користувача тризначне число та виведіть другу цифру цього числа. Для вирішення завдання використовуйте оператор % (залишок від ділення).
+  -->
+    <!--
+    <script>
+      /*
+      let userNumber = prompt("Введите 3х значное число: ");
+      if (userNumber != null) {
+        userNumber = parseInt(userNumber);
+        if (!isNaN(userNumber) && userNumber > 99 && userNumber <= 999) {
+          userNumber = Math.floor((userNumber / 10) % 10);
+          alert("вторая цифра чиcла:  " + userNumber);
+        } else {
+          alert("Введено неверное число");
+        }
+      } else {
+        alert("отмена ввода");
+      }
+        */
+    </script>
+    -->
+    <!--
+  Запросіть у користувача п'ятизначне число та перемістіть останню цифру на початок (із числа 12345 має вийти число 51234).
+  -->
+    <!--
+    <script>
+      /*
+      let userNumber = prompt("Введите 5тизначное число: ");
+      if (userNumber != null) {
+        userNumber = parseInt(userNumber);
+        if (!isNaN(userNumber) && userNumber > 9999 && userNumber <= 99999) {
+          let temp = userNumber % 10;
+          userNumber /= 10;
+          userNumber = temp * 10000 + Math.floor(userNumber);
+          alert("измененное число:  " + userNumber);
+        } else {
+          alert("Введено неверное число");
+        }
+      } else {
+        alert("отмена ввода");
+      }
+        */
+    </script>
+    -->
+    <!--Зарплата працівника становить $250+10% від продажу. Запросіть загальну суму продажу за місяць і підрахуйте зарплату.-->
+    <!--
+    <script>
+      /*
+      let monthSales = prompt("введите сумму продаж за месяц:");
+      if (monthSales != null) {
+        monthSales = Number(monthSales);
+        if (!isNaN(monthSales)) {
+          let salary = 250;
+          let percent = monthSales * 0.1;
+          alert(
+            "ставка: $" +
+              salary +
+              "\n10% от продаж: $" +
+              percent +
+              "\nзарплата: $" +
+              (salary + percent)
+          );
+        } else {
+          alert("Введено неверное число");
+        }
+      } else {
+        alert("отмена ввода");
+      }*/
+    </script>
+  --></body>
+</html>
