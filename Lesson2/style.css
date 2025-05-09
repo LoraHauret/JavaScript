@@ -1,0 +1,52 @@
+button {
+  background-color: rgb(215, 238, 215);
+  padding: 20px;
+  border-radius: 10px;
+  border-style: outset;
+  border-width: 5px;
+}
+button:hover::after {
+  position: absolute;
+  background-color: rgba(148, 221, 176, 0.75);
+  color: rgb(3, 47, 4);
+  padding: 20px 15px;
+  border-radius: 10px;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  content: attr(title);
+  font-size: larger;
+  text-align: left;
+  border: 1px solid rgb(64, 176, 111);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 2% 5%;
+}
+
+.item {
+  border: 1px solid rgb(9, 71, 35);
+  margin: 2% 7%;
+}
+
+#result {
+  position: absolute;
+  background-color: rgba(148, 221, 176, 0.75);
+  color: rgb(3, 47, 4);
+  padding: 20px 15px;
+  border-radius: 10px;
+  top: 65%;
+  left: 25%;
+  width: 50%;
+  font-size: larger;
+  text-align: left;
+  border: 1px solid rgb(64, 176, 111);
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
