@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #363a3b;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  display: flex;
+  gap: 50px;
+}
+.container .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  background: #111;
+}
+.container .box span {
+  position: absolute;
+  width: 300px;
+  height: 2px;
+  background: var(--img);
+  background-size: 300px;
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+}
+
+.container .box.active span {
+  transform: translateX(var(--x)) rotate(var(--r));
+}
+
+/*transition: [свойство] [длительность] [функция-темп] [задержка];
+Значение	Описание
+ease	по умолчанию: медленно → быстро → медленно
+linear	равномерно
+ease-in	ускоряется
+ease-out	замедляется
+ease-in-out	ускорение в начале, замедление в конце
+cubic-bezier(x1, y1, x2, y2)	собственная кривая движения*/
+/*
+pointer-events
+Значение	Что делает
+auto	    Элемент реагирует на события указателя (поведение по умолчанию)
+none	    Элемент не получает события указателя (как будто его нет)
+*/
+/*
+classList.toggle('active')
+Это метод для работы с классами элемента в JavaScript. Он используется для добавления или удаления класса в зависимости от того, есть ли он у элемента.
+
+Как это работает:
+Если у элемента нет класса active, то метод toggle добавляет его.
+
+Если у элемента уже есть класс active, то метод toggle удаляет его.
+*/
